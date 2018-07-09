@@ -3,7 +3,6 @@
 
 # Exept
 !.vimrc
-!.bash_profile
 !setup_mac
 !setup_ubuntu
 !.gitignore
