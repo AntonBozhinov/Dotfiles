@@ -9,4 +9,6 @@
 !.gitignore
 !.gitignore_global
 !.gitconfig
+!.zshrc
+!.zshrc.pre-oh-my-zsh
 !README.md

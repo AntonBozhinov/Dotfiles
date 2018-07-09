@@ -7,6 +7,9 @@ if [ ! -f /usr/local/bin/brew ]; then
 	echo "Homebrew installed successfuly"
 fi
 
+# Install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Install pathogen.vim
 if [ ! -d ~/.vim ]; then
 	echo "Installing pathogen..."
