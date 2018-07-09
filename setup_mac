@@ -100,5 +100,18 @@ fi
 
 # Install ctags
 if [ -f /usr/local/bin/brew ]; then
+    echo "Install ctags from homebrew"
     brew install ctags
+    echo "ctags successfuly installed"
 fi
+
+# Install vim-markdown-preview
+if [! -d ~/.vim/bundle/vim-markdown-preview]; then
+    echo "Install vim-markdown-preview"
+    brew install grip
+    cd ~/.vim/bundle && \
+    https://github.com/JamshedVesuna/vim-markdown-preview.git
+    echo "vim-markdown-preview installed successfuly" 
+fi
+
+

@@ -2,6 +2,15 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Remap markdown preview key
+let vim_markdown_preview_hotkey='<leader>p'
+
+" Enable grip
+let vim_markdown_preview_github=1
+
+" map nerdtree ot l
+map <leader>l :NERDTree
+
 " Search for tags file in current dir
 set tags=./tags
 
@@ -12,7 +21,6 @@ set scrolloff=5
 set number
 set is
 
-map <leader>l :NERDTree
 
 " Copy the indentation from the previous line, when starting a new line
 set autoindent

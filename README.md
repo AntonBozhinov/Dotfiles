@@ -1,11 +1,11 @@
-#Installation
+# Installation
 
-##Mac
+## Mac
 ```console
 ./setup_mac
 ```
 
-##Ubuntu
+## Ubuntu
 ```console
 ./setup_ubuntu
 ```
