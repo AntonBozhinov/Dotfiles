@@ -8,9 +8,6 @@ set tags=./tags
 " Set schroll offset
 set scrolloff=5
 
-" Use ack instead of grep
-set grepprg=ack
-
 " Set line numbering
 set number
 set is
