@@ -8,6 +8,9 @@ let vim_markdown_preview_hotkey='<leader>p'
 " Enable grip
 let vim_markdown_preview_github=1
 
+" Show hidden files in nerdtree
+let NERDTreeShowHidden=1
+
 " map nerdtree ot l
 map <leader>l :NERDTree
 
