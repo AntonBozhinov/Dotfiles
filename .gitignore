@@ -4,7 +4,8 @@
 # Exept
 !.vimrc
 !.bash_profile
-!setup_dev_env
+!setup_dev_env_mac
+!setup_dev_env_ubuntu
 !.gitignore
 !.gitignore_global
 !.gitconfig
