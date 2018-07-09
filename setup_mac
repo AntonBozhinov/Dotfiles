@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Install Homebrew
-if [! -f /usr/local/bin/brew]; then
+if [ ! -f /usr/local/bin/brew ]; then
 	echo "Installing homebrew"
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	echo "Homebrew installed successfuly"
 fi
 
 # Install pathogen.vim
-if [! -d ~/.vim]; then
+if [ ! -d ~/.vim ]; then
 	echo "Installing pathogen..."
 	mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -16,14 +16,14 @@ if [! -d ~/.vim]; then
 fi
 
 # Install vim-rails
-if [! -d ~/.vim/bundle/vim-rails]; then
+if [ ! -d ~/.vim/bundle/vim-rails ]; then
 	echo "Installing vim-rails plugin..."
 	cd ~/.vim/bundle && git clone https://github.com/tpope/vim-rails.git && vim -u NONE -c "helptags vim-rails/doc" -c q
 	echo "vim-rails installed successfuly!"
 fi
 
 # Install bundler ...
-if [! -d ~/.vim/bundle/vim-bundler]; then
+if [ ! -d ~/.vim/bundle/vim-bundler ]; then
 	echo "Install bundler.vim ..."
 	cd ~/.vim/bundle && \
 	git clone git://github.com/tpope/vim-bundler.git
@@ -31,7 +31,7 @@ if [! -d ~/.vim/bundle/vim-bundler]; then
 fi
 
 # Install dispatcher.vim
-if [! -d ~/.vim/bundle/vim-dispatcher]; then
+if [ ! -d ~/.vim/bundle/vim-dispatch ]; then
 	echo "Install dispatcher.vim"
 	cd ~/.vim/bundle && \
 	git clone git://github.com/tpope/vim-dispatch.git
@@ -39,14 +39,14 @@ if [! -d ~/.vim/bundle/vim-dispatcher]; then
 fi
 
 # Install auto-pairs...
-if [! -d ~/.vim/bundle/auto-pairs]; then
+if [ ! -d ~/.vim/bundle/auto-pairs ]; then
 	echo "Install auto-pairs.vim"
 	git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
 	echo "auto-pairs.vim installed successfuly"
 fi
 
 # Install tlib.vim
-if [! -d ~/.vim/bundle/tlib_vim]; then
+if [ ! -d ~/.vim/bundle/tlib_vim ]; then
 	echo "Install tlib.vim..."
 	cd ~/.vim/bundle && \
 	git clone https://github.com/tomtom/tlib_vim.git
@@ -54,7 +54,7 @@ if [! -d ~/.vim/bundle/tlib_vim]; then
 fi
 
 # Install vim-addon-mw-utils
-if [! -d ~/.vim/bundle/vim-addon-mw-utils]; then
+if [ ! -d ~/.vim/bundle/vim-addon-mw-utils ]; then
 	echo "Install vim-addon-mw-utils.vim"
 	cd ~/.vim/bundle && \
 	git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
@@ -62,21 +62,21 @@ if [! -d ~/.vim/bundle/vim-addon-mw-utils]; then
 fi
 
 # Install vim-snipmate
-if [! -d ~/.vim/bundle/vim-snipmate]; then
+if [ ! -d ~/.vim/bundle/vim-snipmate ]; then
 	echo "Install vim-snipmate"
 	git clone https://github.com/garbas/vim-snipmate.git
 	echo "vim-snipmate installed successfuly"
 fi
 
 # Install vim-snippets
-if [! -d ~/.vim/bundle/vim-snippets]; then
+if [ ! -d ~/.vim/bundle/vim-snippets ]; then
 	echo "Install vim-snippets..."
 	git clone https://github.com/honza/vim-snippets.git
 	echo "vim-snippets installed successfuly"
 fi
 
 # Install sensible.vim
-if [! -d ~/.vim/bundle/vim-sensible]; then
+if [ ! -d ~/.vim/bundle/vim-sensible ]; then
 	echo "Install vim-sensible"
 	cd ~/.vim/bundle && \
 	git clone https://github.com/tpope/vim-sensible.git
@@ -84,15 +84,15 @@ if [! -d ~/.vim/bundle/vim-sensible]; then
 fi
 
 # Install colorschemes
-if [! -d ~/.vim/bundle/colorschemes]; then
+if [ ! -d ~/.vim/bundle/colorschemes ]; then
 	echo "Install colorschemes...."
 	cd ~/.vim
-	git submodule add https://github.com/flazz/vim-colorschemes.git bundle/colorschemes
+	git clone https://github.com/flazz/vim-colorschemes.git bundle/colorschemes
 	echo "colorschemes installed successfuly"
 fi
 
 # Install nerdtree
-if [! -d ~/.vim/bundle/nerdtree]; then
+if [ ! -d ~/.vim/bundle/nerdtree ]; then
     echo "Install nerdtree..."
     git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
     echo "nerdtree installed successfuly"
@@ -106,11 +106,11 @@ if [ -f /usr/local/bin/brew ]; then
 fi
 
 # Install vim-markdown-preview
-if [! -d ~/.vim/bundle/vim-markdown-preview]; then
+if [ ! -d ~/.vim/bundle/vim-markdown-preview ]; then
     echo "Install vim-markdown-preview"
     brew install grip
     cd ~/.vim/bundle && \
-    https://github.com/JamshedVesuna/vim-markdown-preview.git
+    git clone https://github.com/JamshedVesuna/vim-markdown-preview.git
     echo "vim-markdown-preview installed successfuly" 
 fi
 
