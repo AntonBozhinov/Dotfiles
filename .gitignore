@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Exept
+!.vimrc
+!.bash_profile
+!setup_dev_env
+!.gitignore
+!.gitignore_global
+!.gitconfig
+
