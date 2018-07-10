@@ -1,10 +1,11 @@
 #!/bin/ash
 
 # install vim
-ack update
-ack add vim
-ack add curl
-ack add git
+apk update
+apk upgrade
+apk add vim
+apk add curl
+apk add git
 git init .
 git remote add -t \* -f origin git@github.com:AntonBozhinov/Dotfiles.git 
 git checkout master
