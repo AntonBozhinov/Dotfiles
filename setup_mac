@@ -139,4 +139,27 @@ if [ ! -d ~/.vim/bundle/vim-jsx]; then
     echo "vim-javascipt installed successfuly" 
 fi
 
+# Install ale
+if [ ! -d ~/.vim/bundle/ale ]; then
+    echo "Install vim-ale"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/w0rp/ale.git
+    echo "vim-ale installed successfuly" 
+fi
+
+# Install vim-es2015-snippets
+if [ ! -d ~/.vim/bundle/vim-es2015-snippets ]; then
+    echo "Install vim-es2015-snippets"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/epilande/vim-es2015-snippets.git
+    echo "vim-es2015-snippets installed successfuly" 
+fi
+
+# Install vim-react-snippets
+if [ ! -d ~/.vim/bundle/vim-react-snippets ]; then
+    echo "Install vim-react-snippets"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/epilande/vim-react-snippets.git
+    echo "vim-react-snippets installed successfuly" 
+fi
 

@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" This saves the buffer whenever text is changed. (Vim 7.4)
+autocmd TextChanged,TextChangedI <buffer> silent write
+
 " Remap markdown preview key
 let vim_markdown_preview_hotkey='<leader>p'
 
@@ -12,7 +15,7 @@ let vim_markdown_preview_github=1
 let NERDTreeShowHidden=1
 
 " emmet leader key remap
-let g:user_emmet_leader_key='m'
+let g:user_emmet_leader_key='<leader>m'
 
 " vim javascript config
 let g:javascript_plugin_jsdoc = 1
