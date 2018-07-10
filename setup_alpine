@@ -1,5 +1,13 @@
-#!/bin/bash
+#!/bin/ash
 
+# install vim
+ack update
+ack add vim
+ack add curl
+ack add git
+git init .
+git remote add -t \* -f origin git@github.com:AntonBozhinov/Dotfiles.git 
+git checkout master
 # Install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

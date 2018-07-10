@@ -2,9 +2,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" This saves the buffer whenever text is changed. (Vim 7.4)
-autocmd TextChanged,TextChangedI <buffer> silent write
-
 " Remap markdown preview key
 let vim_markdown_preview_hotkey='<leader>p'
 
@@ -24,6 +21,9 @@ let g:javascript_plugin_flow = 1
 
 " map nerdtree ot l
 map <leader>l :NERDTree
+
+" Give yank enough space
+set viminfo='100,<10000,s100,h
 
 " Search for tags file in current dir
 set tags=./tags
