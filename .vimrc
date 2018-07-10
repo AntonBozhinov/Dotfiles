@@ -11,6 +11,14 @@ let vim_markdown_preview_github=1
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
+" emmet leader key remap
+let g:user_emmet_leader_key='m'
+
+" vim javascript config
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
+
 " map nerdtree ot l
 map <leader>l :NERDTree
 

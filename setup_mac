@@ -117,4 +117,26 @@ if [ ! -d ~/.vim/bundle/vim-markdown-preview ]; then
     echo "vim-markdown-preview installed successfuly" 
 fi
 
+# Install emmet-vim
+if [ ! -d ~/.vim/bundle/emmet-vim ]; then
+    echo "Installing emmet-vim"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/mattn/emmet-vim.git 
+    echo "emmet-vim installed successfuly" 
+fi
+
+# Install vim-javascript
+if [ ! -d ~/.vim/bundle/vim-javascript]; then
+    echo "Install vim-javascript"
+    git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
+    echo "vim-javascipt installed successfuly" 
+fi
+
+# Install vim-jsx
+if [ ! -d ~/.vim/bundle/vim-jsx]; then
+    echo "Install vim-jsx"
+    git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
+    echo "vim-javascipt installed successfuly" 
+fi
+
 
