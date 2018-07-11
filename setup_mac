@@ -178,7 +178,7 @@ if [ ! -f /usr/local/bin/tmux ]; then
 fi
 
 # Install syntastic
-if [ ! -d ~/.vim/bundle/vim-syntastic ]; then
+if [ ! -d ~/.vim/bundle/syntastic ]; then
     echo "Install syntastic"
     cd ~/.vim/bundle && \
     git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
@@ -211,4 +211,3 @@ if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
     git submodule update --init --recursive
     ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 fi
->>>>>>> 5a5fe2786a12c192d8faf1893f2dbeed36c947a0
