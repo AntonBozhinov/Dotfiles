@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Exept
+!.vimrc
+!setup_mac
+!setup_ubuntu
+!setup_alpine
+!.gitignore
+!.gitignore_global
+!.gitconfig
+!.zshrc
+!.zshrc.pre-oh-my-zsh
+!.tmux.conf
+!README.md
