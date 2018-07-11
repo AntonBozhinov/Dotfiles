@@ -163,3 +163,10 @@ if [ ! -d ~/.vim/bundle/vim-react-snippets ]; then
     echo "vim-react-snippets installed successfuly" 
 fi
 
+# Install tmux
+if [ ! -f /usr/local/bin/tmux ]; then
+    echo "Install tmux"
+    brew install tmux
+    echo "tmux installed successfuly"
+fi
+

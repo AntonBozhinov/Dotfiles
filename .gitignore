@@ -11,4 +11,5 @@
 !.gitconfig
 !.zshrc
 !.zshrc.pre-oh-my-zsh
+!.tmux.conf
 !README.md
