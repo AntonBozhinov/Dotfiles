@@ -26,7 +26,7 @@ noremap <Leader>f :Fixmyjs<CR>
 map <leader>l :NERDTree<CR>
 
 " map remap ctrl+a for usability
-map = <S-a>
+map <leader>k <S-a>
 
 " Give yank enough space
 set viminfo='100,<10000,s100,h
