@@ -11,6 +11,10 @@ let vim_markdown_preview_github=1
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
+" You complete me settings
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
 " emmet leader key remap
 let g:user_emmet_leader_key='<leader>m'
 
@@ -19,8 +23,14 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
 
+" eslint config
+noremap <Leader>f :Fixmyjs<CR>
+
 " map nerdtree ot l
-map <leader>l :NERDTree
+map <leader>l :NERDTree<CR>
+
+" map remap ctrl+a for usability
+map <leader>k <S-a>
 
 " Give yank enough space
 set viminfo='100,<10000,s100,h

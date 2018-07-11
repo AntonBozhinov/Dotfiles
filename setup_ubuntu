@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get update
+sudo apt-get upgrade
 # Install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -149,3 +151,44 @@ if [ ! -d ~/.vim/bundle/vim-react-snippets ]; then
     echo "vim-react-snippets installed successfuly" 
 fi
 
+# Install tmux
+if [ ! -f /usr/local/bin/tmux ]; then
+    echo "Install tmux..."
+    sudo apt-get install tmux
+    echo "tmux successfuly installed"
+fi
+
+# Install syntastic
+if [ ! -d ~/vim/bundle/vim-syntastic ]; then
+    echo "Install syntastic"
+    cd ~/.vim/bundle && \
+    git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+    echo "syntastic installed successfuly"
+fi
+
+# Install fixmyjs
+if [ ! -d ~/.vim/bundle/vim-fixmyjs ]; then
+    echo "Install vim-fixmyjs"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/ruanyl/vim-fixmyjs.git
+    echo "vim-fixmyjs installed successfuly"
+fi
+
+# Install vim-surround
+if [ ! -d ~/.vim/bundle/vim-surround ]; then
+    echo "Install vim-surround..."
+    cd ~/.vim/bundle && \
+    git clone https://github.com/tpope/vim-surround.git
+    echo "vim-surround installed successfuly"
+fi
+
+# Install YouCompleteMe
+if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
+    echo "Install you YouCompleteMe"
+    sudo apt-get install build-essential cmake
+    cd ~/.vim/bundle && \
+    git clone https://github.com/Valloric/YouCompleteMe.git
+    cd ~/.vim/bundle/YouCompleteMe && \
+    git submodule update --init --recursive
+    ~/.vim/bundle/YouCompleteMe/install.sh
+fi
