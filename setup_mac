@@ -170,3 +170,18 @@ if [ ! -f /usr/local/bin/tmux ]; then
     echo "tmux installed successfuly"
 fi
 
+# Install syntastic
+if [ ! -d ~/.vim/bundle/vim-syntastic ]; then
+    echo "Install syntastic"
+    cd ~/.vim/bundle && \
+    git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+    echo "syntastic installed successfuly"
+fi
+
+# Install fixmyjs
+if [ ! -d ~/.vim/bundle/vim-fixmyjs ]; then
+    echo "Install vim-fixmyjs"
+    cd ~/.vim/bundle && \
+    git clone https://github.com/ruanyl/vim-fixmyjs.git
+    echo "vim-fixmyjs installed successfuly"
+fi
