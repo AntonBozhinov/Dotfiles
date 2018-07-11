@@ -185,10 +185,10 @@ fi
 # Install YouCompleteMe
 if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
     echo "Install you YouCompleteMe"
-    sudo apt-get install cmake
+    sudo apt-get install build-essential cmake
     cd ~/.vim/bundle && \
     git clone https://github.com/Valloric/YouCompleteMe.git
     cd ~/.vim/bundle/YouCompleteMe && \
     git submodule update --init --recursive
-    ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
+    ~/.vim/bundle/YouCompleteMe/install.sh
 fi
