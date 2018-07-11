@@ -11,6 +11,10 @@ let vim_markdown_preview_github=1
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
+" You complete me settings
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
 " emmet leader key remap
 let g:user_emmet_leader_key='<leader>m'
 
