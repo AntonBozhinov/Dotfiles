@@ -163,3 +163,11 @@ if [ ! -d ~/.vim/bundle/vim-react-snippets ]; then
     echo "vim-react-snippets installed successfuly" 
 fi
 
+# Install vim-node
+if [ ! -d ~/.vim/bundle/node]; then
+    echo "Install vim-node"
+    git clone https://github.com/moll/vim-node.git ~/.vim/bundle/node
+    echo "vim-node installed successfuly" 
+fi
+
+
