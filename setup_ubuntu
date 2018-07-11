@@ -173,3 +173,11 @@ if [ ! -d ~/.vim/bundle/vim-fixmyjs ]; then
     git clone https://github.com/ruanyl/vim-fixmyjs.git
     echo "vim-fixmyjs installed successfuly"
 fi
+
+# Install vim-surround
+if [ ! -d ~/.vim/bundle/vim-surround ]; then
+    echo "Install vim-surround..."
+    cd ~/.vim/bundle && \
+    git clone https://github.com/tpope/vim-surround.git
+    echo "vim-surround installed successfuly"
+fi

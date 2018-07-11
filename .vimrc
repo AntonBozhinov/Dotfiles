@@ -20,19 +20,10 @@ let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
 
 " eslint config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 noremap <Leader>f :Fixmyjs<CR>
 
 " map nerdtree ot l
-map <leader>l :NERDTree
+map <leader>l :NERDTree<CR>
 
 " map remap ctrl+a for usability
 map = <S-a>
