@@ -201,13 +201,3 @@ if [ ! -d ~/.vim/bundle/vim-surround ]; then
     echo "vim-surround installed successfuly"
 fi
 
-# Install YouCompleteMe
-if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
-    echo "Install you YouCompleteMe"
-    brew install cmake
-    cd ~/.vim/bundle && \
-    git clone https://github.com/Valloric/YouCompleteMe.git
-    cd ~/.vim/bundle/YouCompleteMe && \
-    git submodule update --init --recursive
-    ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
-fi
