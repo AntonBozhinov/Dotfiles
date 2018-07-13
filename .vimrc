@@ -4,6 +4,7 @@ filetype plugin indent on
 
 " Remap markdown preview key
 let vim_markdown_preview_hotkey='<leader>p'
+let g:UltiSnipsListSnippets="<leader>s"
 
 " Enable grip
 let vim_markdown_preview_github=1
@@ -11,9 +12,18 @@ let vim_markdown_preview_github=1
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
-" You complete me settings
+" YouCompleteMe
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+
+"Start autocompletion after 4 chars
+ let g:ycm_min_num_of_chars_for_completion = 4
+ let g:ycm_min_num_identifier_candidate_chars = 4
+ let g:ycm_enable_diagnostic_highlighting = 0
+" Don't show YCM's preview window [ I find it really annoying  ]
+ set completeopt-=preview
+ let g:ycm_add_preview_to_completeopt = 0"
+
 
 " emmet leader key remap
 let g:user_emmet_leader_key='<leader>m'
@@ -37,14 +47,13 @@ set viminfo='100,<10000,s100,h
 
 " Search for tags file in current dir
 set tags=./tags
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 " Set schroll offset
 set scrolloff=5
 
 " Set line numbering
-set number
 set is
-
 
 " Copy the indentation from the previous line, when starting a new line
 set autoindent
@@ -54,11 +63,11 @@ set autoindent
 :match ExtraWhitespace /\s\+$/
 :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 
-" show existing tab with 4 spaces width
-set tabstop=4
+" show existing tab with spaces width
+set tabstop=2
 
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
+" when indenting with '>', use spaces width
+set shiftwidth=2
 
 " On pressing tab, insert 4 spaces
 set expandtab
