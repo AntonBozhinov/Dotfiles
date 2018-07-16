@@ -10,6 +10,7 @@ let vim_markdown_preview_github=1
 
 " Show hidden files in nerdtree
 let NERDTreeShowHidden=1
+autocmd TextChanged,TextChangedI <buffer> silent write
 
 " You complete me settings
 let g:ycm_key_list_select_completion=[]
