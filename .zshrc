@@ -115,11 +115,9 @@ export PATH=$PATH:$GOROOT/bin
 alias gg="git add -A && git commit -m"
 alias gogo="cd $GOPATH"
 alias rnm="rm -rf node_modules && npm cache clean -f && npm i"
-alias almond-staging="ssh root@94.237.52.39"
-alias aws-ci="ssh -i ~/.ssh/obg-aws-kp-15-05-2019.pem ubuntu@ec2-3-8-140-26.eu-west-2.compute.amazonaws.com"
-alias aws-staging="ssh -i ~/.ssh/obg-aws-kp-15-05-2019.pem ubuntu@ec2-35-177-166-67.eu-west-2.compute.amazonaws.com"
 alias push="git push -u origin HEAD"
 alias whosport="lsof -i "
+alias dc='docker-compose'
 
 [[ -s "/Users/antonbozhinov/.gvm/scripts/gvm" ]] && source "/Users/antonbozhinov/.gvm/scripts/gvm"
 
@@ -134,3 +132,8 @@ if [ -f '/Users/antonbozhinov/Downloads/google-cloud-sdk/path.zsh.inc' ]; then .
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/antonbozhinov/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/antonbozhinov/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
