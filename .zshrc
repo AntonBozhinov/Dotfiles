@@ -118,6 +118,8 @@ alias rnm="rm -rf node_modules && npm cache clean -f && npm i"
 alias push="git push -u origin HEAD"
 alias whosport="lsof -i "
 alias dc='docker-compose'
+alias docker-stop-all='docker stop $(docker ps -a -q)'
+alias docker-remove-all='docker rm $(docker ps -a -q)'
 
 [[ -s "/Users/antonbozhinov/.gvm/scripts/gvm" ]] && source "/Users/antonbozhinov/.gvm/scripts/gvm"
 
