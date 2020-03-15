@@ -120,6 +120,7 @@ alias whosport="lsof -i "
 alias dc='docker-compose'
 alias docker-stop-all='docker stop $(docker ps -a -q)'
 alias docker-remove-all='docker rm $(docker ps -a -q)'
+alias switch-zsh='for f in $(compaudit);do sudo chown $(whoami):admin $f;done;'
 
 [[ -s "/Users/antonbozhinov/.gvm/scripts/gvm" ]] && source "/Users/antonbozhinov/.gvm/scripts/gvm"
 
